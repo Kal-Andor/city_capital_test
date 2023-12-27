@@ -2,7 +2,7 @@ from city import City
 
 # Főváros esetén a feladat nem határozta meg explicit módon a setter metódusok létrehozását csak a getter-ekét de ennek ellenére létrehoztam.
 # Illetve szintén nem volt meghatározva, hogy a szennyezettség és a metrók száma értékek legyenek-e szükségesek az osztály
-# inicializálásánál, ezért hogyha nem adódnak meg akkor kapnak egy-egy alapértelmezett értéket, de igény esetén megadhatóak.
+# példányosításánál, ezért a megadásukat opcionálissá tettem, alapértelmezett értékek beállításával.
 
 
 class Capital(City):

@@ -1,9 +1,8 @@
 from city import City
 
-# A feladat nem határozta meg explicit módon a setter metódusok létrehozását csak a getter-ekét de ennek ellenére létrehoztam.
+# Főváros esetén a feladat nem határozta meg explicit módon a setter metódusok létrehozását csak a getter-ekét de ennek ellenére létrehoztam.
 # Illetve szintén nem volt meghatározva, hogy a szennyezettség és a metrók száma értékek legyenek-e szükségesek az osztály
-# inicializálásánál, ezért oly módon határoztam meg, hogy ha nem adódnak meg akkor kapnak egy-egy alapértelmezett értéket,
-# de igény esetén megadhatóak.
+# inicializálásánál, ezért hogyha nem adódnak meg akkor kapnak egy-egy alapértelmezett értéket, de igény esetén megadhatóak.
 
 
 class Capital(City):
@@ -52,9 +51,3 @@ class Capital(City):
             adequate="Igen" if self.adequate() else "Nem",
         )
         return final_string
-
-
-if __name__ == "__main__":
-    capital = Capital(name="Bukarest", population=2000000, contamination=138, nr_of_metros=6)
-
-    print(capital)

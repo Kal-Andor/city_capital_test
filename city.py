@@ -3,6 +3,7 @@ class City:
     _name: str
     _population: int
 
+    # konstruktor
     def __init__(self, name: str, population: int):
         self.name = name
         self.population = population
@@ -39,9 +40,3 @@ class City:
 
         final_string = template.format(name=self.name, population=self.population)
         return final_string
-
-
-if __name__ == "__main__":
-    city = City("Székelyudvarhely", 34000)
-
-    print(city)
